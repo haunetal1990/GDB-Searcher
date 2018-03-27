@@ -23,7 +23,9 @@ Public Class Form1
     End Sub
 End Class
 
-# other way
+-------
+other way
+------
 
    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For Each Datei In New System.IO.DirectoryInfo("SeasonData").GetFiles("*.gdb")
