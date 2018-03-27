@@ -22,3 +22,20 @@ Public Class Form1
         ToolTip1.Show("Season", TextBox1)
     End Sub
 End Class
+
+# other way
+
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        For Each Datei In New System.IO.DirectoryInfo("SeasonData").GetFiles("*.gdb")
+            For Each Zeile As String In System.IO.File.ReadLines(Datei.FullName)
+                If Zeile.Trim.StartsWith("Game Name = ") Then
+                    ListBox1.Items.Add(Zeile)
+                End If
+            Next
+            For i As Integer = 0 To ListBox1.Items.Count - 1
+                If ListBox1.Items(i).ToString.Contains("Game Name = ") Then
+                    ListBox1.Items(i) = ListBox1.Items(i).ToString.Replace("Game Name = ", "")
+                End If
+            Next
+        Next
+    End Sub
