@@ -1,5 +1,3 @@
-# GDB-Searcher
+# GDB Searcher for F1 Challenge 99-02
 
-Hallo und Willkommen bei meinem 2. Code für "<b>GDB Searcher for F1 Challenge 99-02</b>".
-
-Bei diesem Package findest du den Code für Visual Studio 2017. Mit dem Programm kann man die ".GDB-Files" für das Spiel durchsuchen- und anzeigen lassen.
+On this package you can find the code for ***Visual Studio 2017***. With the program you can browse and display the ".GDB files" for the game.
